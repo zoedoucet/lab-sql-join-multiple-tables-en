@@ -77,5 +77,5 @@ FROM film INNER JOIN inventory
 	LEFT JOIN rental
 	on inventory.inventory_id = rental.inventory_id
 	AND rental.return_date is NULL
-WHERE film.title = "ACADEMY DINOSAURE" 
+WHERE film.title = "ACADEMY DINOSAUR" 
 		AND inventory.store_id = 1;
